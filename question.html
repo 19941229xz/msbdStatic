@@ -6,58 +6,57 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="css/mui.css" rel="stylesheet" />
+		<link href="css/question.css" rel="stylesheet" />
 	</head>
-	<style type="text/css">
-		.circleSpan {
-			border: 1px solid black;
-			border-radius: 30px;
-			padding: 7px;
-			font-size: 4px;
-			padding-left: 10px;
-			padding-right: 10px;
-		}
 
-		.liPadding li {
-			margin: 10px auto;
-		}
-	</style>
 
 	<body>
+	<!--<div style="padding: 10px 10px;">-->
+		<!--<div id="segmentedControl" class="mui-segmented-control" style="width: 40%;margin: 0px auto;">-->
+
+			<!--<a class="mui-control-item mui-active" style="line-height: 30px;" href="#item2">答题模式</a>-->
+			<!--<a class="mui-control-item" style="line-height: 30px;" href="#item3">背题模式</a>-->
+		<!--</div>-->
+	<!--</div>-->
+
 
 		<div class="mui-content">
-			<div style="padding: 10px 10px;">
-				<div id="segmentedControl" class="mui-segmented-control" style="width: 40%;margin: 0px auto;">
-					<!-- <a class="mui-control-item mui-active" href="#item1">待办公文（8）</a> -->
-					<a class="mui-control-item mui-active" style="line-height: 30px;" href="#item2">答题模式</a>
-					<a class="mui-control-item" style="line-height: 30px;" href="#item3">背题模式</a>
-				</div>
-			</div>
+			<header class="header">
+				<a href="javascript:;"><span class="mui-icon mui-icon-arrowthinleft"></span></a>
+				<h5>倒计时 30:50</h5>
+			</header>
 
 			<div class="mui-content-padded">
-				<!-- <h4>基础巩固</h4> --><span class="mui-badge mui-badge-blue">单选题</span>java是什么类型得语言java是什么类型得语言java是什么类型得语言java是什么类型得语言？
+				<!-- <h4>基础巩固</h4> --><span class="mui-badge mui-badge-blue">判断</span>java是什么类型得语言java是什么类型得语言java是什么类型得语言java是什么类型得语言？
+				<img width="100%" src="images/question_01.png" alt="">
 			</div>
-			<ul class="mui-table-view liPadding" style="background-color: inherit;">
-				<li class="mui-table-view-cell">
-					<a class="">
-						<span class="circleSpan">A</span>静态语言
+			<ul class="options">
+				<li>
+					<a href="javascript:;">
+						<span class="circleSpan">A</span>
+						静态语言
 					</a>
 				</li>
-				<li class="mui-table-view-cell">
-					<a class="">
-						<span class="circleSpan">A</span>动态语言
+				<li>
+					<a href="javascript:;">
+						<span class="circleSpan">B</span>
+						静态语言
 					</a>
 				</li>
-				<li class="mui-table-view-cell">
-					<a class="">
-						<span class="circleSpan">A</span>解释性语言
+				<li>
+					<a href="javascript:;">
+						<span class="circleSpan">C</span>
+						静态语言
 					</a>
 				</li>
-				<li class="mui-table-view-cell">
-					<a class="">
-						<span class="circleSpan">A</span>编译性语言
+				<li>
+					<a href="javascript:;">
+						<span class="circleSpan">D</span>
+						静态语言
 					</a>
 				</li>
 			</ul>
+
 
 			<div class="mui-content-padded">
 				<h4>试题详解</h4>
@@ -66,14 +65,16 @@
 			<div class="mui-card">
 				<div class="mui-card-content">
 					<div class="mui-card-content-inner mui-table-view-cell">
-						<div class="mui-content-padded">
-							<h4>答案：B</h4>报错 考朋友
+						<div class="mui-content-padded my_answer">
+							<h4>答案：B</h4>
+							<div class="right">报错 <span>考朋友</span></div>
+						</div>
+						<img width="100%" style="margin-bottom: 10px" src="http:\/\/placehold.it\/400x100">
+						<div>
+							<strong>题目解析：</strong>蝴蝶卡上的电话卡军事大国
 						</div>
 						<div>
-							题目解析：蝴蝶卡上的电话卡军事大国
-						</div>
-						<div>
-							详细解释：蝴蝶卡上的电话卡军事大国
+							<strong>详细解释：</strong>蝴蝶卡上的电话卡军事大国
 						</div>
 					</div>
 				</div>
@@ -82,13 +83,17 @@
 			<div class="mui-content-padded">
 				<h4>题目点评</h4>
 			</div>
-			<ul class="mui-table-view">
+			<ul class="mui-table-view" style="margin-bottom: 40px;">
 				<li class="mui-table-view-cell mui-media">
 					<a href="javascript:;">
 						<img class="mui-media-object mui-pull-left" src="http:\/\/placehold.it\/40x40">
 						<div class="mui-media-body">
-							<p>幸福<span class="mui-icon mui-icon-chat"></span></p>
-							<p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+							<p class="my_comment">
+								用户12839 &nbsp;&nbsp;
+								<span class="mui-icon mui-icon-chat"></span>
+								<span class="my_up mui-icon ">999+</span>
+							</p>
+							<p style="color: #000;" class="mui-ellipsis">几人题目是违法交通规则, 当然是违法行为咯</p>
 						</div>
 					</a>
 				</li>
@@ -96,8 +101,12 @@
 					<a href="javascript:;">
 						<img class="mui-media-object mui-pull-left" src="http:\/\/placehold.it\/40x40">
 						<div class="mui-media-body">
-							木屋
-							<p class="mui-ellipsis">想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+							<p class="my_comment">
+								用户12839 &nbsp;&nbsp;
+								<span class="mui-icon mui-icon-chat"></span>
+								<span class="my_up mui-icon ">999+</span>
+							</p>
+							<p style="color: #000;" class="mui-ellipsis">几人题目是违法交通规则, 当然是违法行为咯</p>
 						</div>
 					</a>
 				</li>
@@ -105,18 +114,25 @@
 					<a href="javascript:;">
 						<img class="mui-media-object mui-pull-left" src="http:\/\/placehold.it\/40x40">
 						<div class="mui-media-body">
-							CBD
-							<p class="mui-ellipsis">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+							<p class="my_comment">
+								用户12839 &nbsp;&nbsp;
+								<span class="mui-icon mui-icon-chat"></span>
+								<span class="my_up mui-icon ">999+</span>
+							</p>
+							<p style="color: #000;" class="mui-ellipsis">几人题目是违法交通规则, 当然是违法行为咯</p>
 						</div>
 					</a>
 				</li>
+
 			</ul>
 			
-			
-			<nav class="mui-bar mui-bar-tab">
-				<span class="mui-icon mui-icon-compose">交卷
-				<span class="mui-icon mui-icon-checkmarkempty"></span>0
-				<span class="mui-icon mui-icon-closeempty"></span>0
+			<nav class="my_form">
+				<a href="javascript:;"><span style="font-size: 14px;" class="mui-icon mui-icon-bars"></span>交卷</a>
+				<div class="my_submit">
+					<span class="mui-icon mui-icon-checkmarkempty">0</span>
+					<span class="mui-icon mui-icon-checkmarkempty">0</span>
+					<span><strong>1</strong>/100</span>
+				</div>
 			</nav>
 
 		</div>
