@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+	</head>
+	
+	<style type="text/css">
+		.circleBtn {
+			border-radius: 100px;
+			margin-top: 30px;
+			border: 0.5px solid grey;
+			background-color: inherit;
+			width: 80%;
+			margin: 0px auto;
+		}
+	
+		.circleBtn.blue{
+			color: white;
+			border: none;
+			/* 渐变色 */
+			background: -webkit-linear-gradient(left, #01DBE7, #018AFB);
+			/* Safari 5.1 - 6.0 */
+			background: -o-linear-gradient(right, #01DBE7, 018AFB);
+			/* Opera 11.1 - 12.0 */
+			background: -moz-linear-gradient(right, #01DBE7, #018AFB);
+			/* Firefox 3.6 - 15 */
+			background: linear-gradient(to right, #01DBE7, #018AFB);
+			/* 标准的语法（必须放在最后） */
+		}
+	
+		.userInfo {
+			text-align: center;
+		}
+	
+		.userInfo img {}
+	
+		.preTestInfo {}
+	
+		.preTestInfo li {
+			list-style: none;
+		}
+	</style>
+
+	<body>
+		<div class="mui-content">
+			
+			
+			<div class="mui-card">
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner" style="text-align: center;">
+						<h1 style="font-size: 50px;">3</h1>
+						<p>本次答题数</p>
+						<div class="mui-row">
+							<div class="mui-col-sm-4" style="text-align: center;">
+								<p>00:05</p>
+								<p>练习时间</p>
+							</div>
+							<div class="mui-col-sm-4" style="text-align: center;">
+								<p>1</p>
+								<p>错题数</p>
+							</div>
+							<div class="mui-col-sm-4" style="text-align: center;">
+								<p>0%</p>
+								<p>正确率</p>
+							</div>
+						</div>
+						<div class="mui-row">
+							<div class="mui-col-sm-6">
+								<button type="button" class="mui-btn  mui-btn-block circleBtn">全真模拟</button>
+							</div>
+							<div class="mui-col-sm-6">
+								<button type="button" class="mui-btn  mui-btn-block circleBtn blue">全真模拟</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="demo1" class="">
+				<div class="mui-content-padded">
+					<h4>答题数：10题</h4><span>未做题1123题</span>
+				</div> 
+				<p class="mui-progressbar mui-progressbar-in" data-progress="20"><span></span></p>
+			</div>
+			
+			<div class="mui-slider">
+			    <div class="mui-slider-group mui-slider-loop">
+			    	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+			        <div class="mui-slider-item mui-slider-item-duplicate">
+			            <ul class="mui-table-view mui-grid-view">
+			                <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="http:\/\/placehold.it\/40x40">
+			                        <div class="mui-media-body">Color of SIP CBD</div></a></li>
+			                <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="http:\/\/placehold.it\/40x40">
+			                        <div class="mui-media-body">静静看这世界</div></a></li>
+			            </ul>
+			        </div>
+			        <div class="mui-slider-item">
+			            <ul class="mui-table-view mui-grid-view">
+			                <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="http:\/\/placehold.it\/40x40">
+			                        <div class="mui-media-body">幸福就是可以一起睡觉</div></a></li>
+			                <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="http:\/\/placehold.it\/40x40">
+			                        <div class="mui-media-body">想要一间这样的木屋，静静的喝咖啡</div></a></li>
+			            </ul>
+			        </div>
+			        <div class="mui-slider-item">
+			            <ul class="mui-table-view mui-grid-view">
+			                <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="http:\/\/placehold.it\/40x40">
+			                        <div class="mui-media-body">Color of SIP CBD</div></a></li>
+			                <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="http:\/\/placehold.it\/40x40">
+			                        <div class="mui-media-body">静静看这世界</div></a></li>
+			            </ul>
+			        </div>
+			        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+			        <div class="mui-slider-item mui-slider-item-duplicate">
+			            <ul class="mui-table-view mui-grid-view">
+			                <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="http:\/\/placehold.it\/40x40">
+			                        <div class="mui-media-body">幸福就是可以一起睡觉</div></a></li>
+			                <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="http:\/\/placehold.it\/40x40">
+			                        <div class="mui-media-body">想要一间这样的木屋，静静的喝咖啡</div></a></li>
+			            </ul>
+			        </div>
+			    </div>
+			    <!-- <div class="mui-slider-indicator" style="position: static;background-color: #fff;">
+			        <span class="mui-action mui-action-previous mui-icon mui-icon-back"></span>
+			        <div class="mui-number">
+			            <span>1</span> / 2
+			        </div>
+			        <span class="mui-action mui-action-next mui-icon mui-icon-forward"></span>
+			    </div> -->
+			</div>
+			
+			<div class="mui-content-padded">
+				<h4>相关练习资料</h4>
+			</div>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;" class="mui-navigate-right">
+						<!-- <img class="mui-media-object mui-pull-left" src="http:\/\/placehold.it\/40x40"> -->
+						<div class="mui-media-body">
+							幸福
+							<p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;" class="mui-navigate-right">
+						<!-- <img class="mui-media-object mui-pull-left" src="http:\/\/placehold.it\/40x40"> -->
+						<div class="mui-media-body">
+							木屋
+							<p class="mui-ellipsis">想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;" class="mui-navigate-right">
+						<!-- <img class="mui-media-object mui-pull-left" src="http:\/\/placehold.it\/40x40"> -->
+						<div class="mui-media-body">
+						    CBD
+							<p class="mui-ellipsis">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			
+			
+			
+		</div>
+		
+		
+		
+		
+		
+		
+
+	</body>
+	<script src="js/mui.js"></script>
+	<script type="text/javascript">
+		mui.init()
+		var progressbar1 = mui('#demo1');
+		mui(progressbar1).progressbar().setProgress(10)
+		progressbar1.on('tap', 'a', function() {
+			mui(progressbar1).progressbar().setProgress(this.getAttribute('data-progress'));
+		});
+	</script>
+</html>
