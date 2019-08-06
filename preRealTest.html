@@ -3,98 +3,123 @@
 <html>
 
 
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<link href="css/mui.css" rel="stylesheet" />
-	</head>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="css/mui.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+</head>
 
-	<body>
-		<div class="mui-content">
-			<div class="mui-card">
-				<div class="mui-card-content">
-					<div class="mui-card-content-inner">
-						<div class="userInfo">
-							<img src="http:\/\/placehold.it\/40x40">
-							<p>姓名</p>
-						</div>
-						<ul class="preTestInfo">
-							<li>面试类型：Java中级工程师</li>
-							<li>笔试时间：45分钟</li>
-							<li>合格标准：90分</li>
-							<li>出题规则：官方认证</li>
-							<li>温馨提示：本考试不能参考答案本考试不能参考答案本考试不能参考答案本考试不能参考答案</li>
-						</ul>
-						<!-- <div class="warmTip">
-							温馨提示：本考试不能参考答案本考试不能参考答案本考试不能参考答案本考试不能参考答案
-						</div> -->
+<body>
+	<div class="mui-content bg-gray">
+		<div class="mui-card">
+			<div class="mui-card-content">
+				<div class="mui-card-content-inner">
+					<div class="userInfo">
+						<img src="http:\/\/placehold.it\/40x40">
+						<p>姓名</p>
+					</div>
+					<ul class="preTestInfo">
+						<li>面试类型：Java中级工程师</li>
+						<li>笔试时间：45分钟</li>
+						<li>合格标准：90分</li>
+						<li>出题规则：官方认证</li>
+					</ul>
+					<div class="warmTip">
+						温馨提示：本考试不能参考答案本考试不能参考答案本考试不能参考答案本考试不能参考答案
 					</div>
 				</div>
 			</div>
-
-			<div class="mui-card">
-				<div class="mui-card-content">
-					<div class="mui-card-content-inner mui-table-view-cell">
-						<span>闭卷考试</span>
-						<div class="mui-switch mui-active">
-							<div class="mui-switch-handle"></div>
-						</div>
-						<span>闭卷考试</span>
-						<p>考试全程无详解考试全程无详解考试全程无详解考试全程无详解考试全程无详解考试全程无详解考试全程无详解考试全程无详解考试全程无详解</p>
-					</div>
-				</div>
-			</div>
-
-			<button type="button" class="mui-btn  mui-btn-block circleBtn">全真模拟</button>
-			<button type="button" class="mui-btn  mui-btn-block circleBtn">优先考未作题</button>
-			<button type="button" class="mui-btn  mui-btn-block circleBtn">智能考试</button>
 		</div>
 
+		<div class="mui-card">
+			<div class="mui-card-content">
+				<div class="mui-card-content-inner mui-table-view-cell">
+					<p class="title">闭卷考试</p>
+					<div class="mui-switch mui-active">
+						<div class="mui-switch-handle"></div>
+					</div>
+					<p class="warmTip">考试全程无详解考试全程无详解考试全程无详解考试全程无详解考试全程无详解考试全程无详解考试全程无详解考试全程无详解考试全程无详解</p>
+				</div>
+			</div>
+		</div>
 
+		<div class="card">
+			<button type="button" class="mui-btn mui-btn-block circleBtn">全真模拟</button>
+			<button type="button" class="mui-btn mui-btn-block circleBtn">优先考未作题</button>
+			<button type="button" class="mui-btn mui-btn-block circleBtn">智能考试</button>
+		</div>
+	</div>
 
+</body>
+<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init({
+		swipeBack: true //启用右滑关闭功能
+	});
+</script>
 
-	</body>
-	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript">
-		mui.init({
-			swipeBack: true //启用右滑关闭功能
-		});
-	</script>
+<style type="text/css">
+	.circleBtn {
+		border-radius: 100px;
+		margin-top: 30px;
+		border: 0.5px solid grey;
+		background-color: inherit;
+	}
 
-	<style type="text/css">
-		.circleBtn {
-			border-radius: 100px;
-			margin-top: 30px;
-			border: 0.5px solid grey;
-			background-color: inherit;
-		}
+	.circleBtn:nth-of-type(1) {
+		color: white;
+		border: none;
+		/* 渐变色 */
+		background: -webkit-linear-gradient(left, #01DBE7, #018AFB);
+		/* Safari 5.1 - 6.0 */
+		background: -o-linear-gradient(right, #01DBE7, 018AFB);
+		/* Opera 11.1 - 12.0 */
+		background: -moz-linear-gradient(right, #01DBE7, #018AFB);
+		/* Firefox 3.6 - 15 */
+		background: linear-gradient(to right, #01DBE7, #018AFB);
+		/* 标准的语法（必须放在最后） */
+	}
 
-		.circleBtn:nth-of-type(1) {
-			color: white;
-			border: none;
-			/* 渐变色 */
-			background: -webkit-linear-gradient(left, #01DBE7, #018AFB);
-			/* Safari 5.1 - 6.0 */
-			background: -o-linear-gradient(right, #01DBE7, 018AFB);
-			/* Opera 11.1 - 12.0 */
-			background: -moz-linear-gradient(right, #01DBE7, #018AFB);
-			/* Firefox 3.6 - 15 */
-			background: linear-gradient(to right, #01DBE7, #018AFB);
-			/* 标准的语法（必须放在最后） */
-		}
+	.userInfo {
+		text-align: center;
+	}
 
-		.userInfo {
-			text-align: center;
-		}
+	.userInfo img {}
 
-		.userInfo img {}
+	.mui-card .title {
+		color: #000;
+		font-size: 17px;
+		min-height: 34px;
+		padding: 5px 10px 0;
+	}
 
-		.preTestInfo {}
+	.preTestInfo {
+		padding: 0 10px;
+	}
 
-		.preTestInfo li {
-			list-style: none;
-		}
-	</style>
+	.preTestInfo li {
+		list-style: none;
+		line-height: 30px;
+		font-size: 16px;
+	}
+
+	.warmTip {
+		padding: 0 10px;
+		color: #999;
+		font-size: 15px;
+	}
+
+	.mui-card-content-inner {
+		position: relative;
+	}
+
+	.mui-card-content-inner .mui-switch {
+		position: absolute;
+		right: 10px;
+		top: 25px;
+	}
+</style>
 
 </html>
