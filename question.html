@@ -11,13 +11,13 @@
 
 
 	<body>
-	<!--<div style="padding: 10px 10px;">-->
+		<!--<div style="padding: 10px 10px;">-->
 		<!--<div id="segmentedControl" class="mui-segmented-control" style="width: 40%;margin: 0px auto;">-->
 
-			<!--<a class="mui-control-item mui-active" style="line-height: 30px;" href="#item2">答题模式</a>-->
-			<!--<a class="mui-control-item" style="line-height: 30px;" href="#item3">背题模式</a>-->
+		<!--<a class="mui-control-item mui-active" style="line-height: 30px;" href="#item2">答题模式</a>-->
+		<!--<a class="mui-control-item" style="line-height: 30px;" href="#item3">背题模式</a>-->
 		<!--</div>-->
-	<!--</div>-->
+		<!--</div>-->
 
 
 		<div class="mui-content">
@@ -28,7 +28,7 @@
 
 			<div class="mui-content-padded">
 				<!-- <h4>基础巩固</h4> --><span class="mui-badge mui-badge-blue">判断</span>java是什么类型得语言java是什么类型得语言java是什么类型得语言java是什么类型得语言？
-				<img width="100%" src="images/question_01.png" alt="">
+				<img width="100%" src="http:\/\/placehold.it\/400x150" alt="">
 			</div>
 			<ul class="options">
 				<li>
@@ -125,7 +125,7 @@
 				</li>
 
 			</ul>
-			
+
 			<nav class="my_form">
 				<a href="javascript:;"><span style="font-size: 14px;" class="mui-icon mui-icon-bars"></span>交卷</a>
 				<div class="my_submit">
@@ -140,6 +140,22 @@
 
 	<script src="js/mui.js"></script>
 	<script type="text/javascript">
-		mui.init()
+		mui.init({
+			gestureConfig: {
+				tap: true, //默认为true
+				doubletap: true, //默认为false
+				longtap: true, //默认为false
+				swipe: true, //默认为true
+				drag: true, //默认为true
+				hold: false, //默认为false，不监听
+				release: false //默认为false，不监听
+			}
+		});
+		document.addEventListener("swiperight", function() {
+			console.log('swiperight')
+		});
+		document.addEventListener("swipeleft", function() {
+			console.log('swipeleft')
+		});
 	</script>
 </html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+
+		<style type="text/css">
+			.yzmBtn {
+				position: absolute;
+				right: 14px;
+				top: 30px;
+				color: #007aff;
+			}
+
+			.myform {
+				background-color: inherit;
+				width: 90%;
+				margin: 0px auto;
+				margin-top: 50px;
+			}
+
+			.circleBtn {
+				border-radius: 100px;
+				margin-top: 30px;
+				border: 0.5px solid grey;
+				background-color: inherit;
+				width: 90%;
+				margin: 20px auto;
+				margin-top: 50px;
+			}
+
+			.circleBtn:nth-of-type(1) {
+				color: white;
+				border: none;
+				/* 渐变色 */
+				background: -webkit-linear-gradient(left, #01DBE7, #018AFB);
+				/* Safari 5.1 - 6.0 */
+				background: -o-linear-gradient(right, #01DBE7, 018AFB);
+				/* Opera 11.1 - 12.0 */
+				background: -moz-linear-gradient(right, #01DBE7, #018AFB);
+				/* Firefox 3.6 - 15 */
+				background: linear-gradient(to right, #01DBE7, #018AFB);
+				/* 标准的语法（必须放在最后） */
+			}
+
+			.changeLoginMethod {
+				font-size: 14px;
+				color: black;
+				text-align: right;
+				padding-right: 7%;
+				font-weight: bold;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="mui-content">
+			<div class="mui-content-padded" style="text-indent: 5%;margin-top: 100px;">
+				<h2>您好，请登录</h2>
+			</div>
+
+
+
+			<form class="mui-input-group myform">
+				<div class="mui-input-row" style="height: 80px;">
+					<label style="font-size: 40px;"><span class="mui-icon mui-icon-phone"></span></label>
+					<input style="height: 80px;" type="text" placeholder="请输入手机号">
+				</div>
+				<div class="mui-input-row" style="height: 80px;">
+					<label style="font-size: 40px;"><span class="mui-icon mui-icon-locked"></span></label>
+					<input style="height: 80px;" type="text" placeholder="请输入验证码">
+					<span class="yzmBtn">发送验证码</span>
+				</div>
+			</form>
+
+			<button type="button" class="mui-btn mui-btn-block circleBtn">登录</button>
+
+			<div class="mui-row changeLoginMethod">
+				账号密码登录
+			</div>
+
+
+
+		</div>
+
+		<nav class="mui-bar mui-bar-tab" style="box-shadow: none;background-color: inherit;text-align: center;font-size: 14px;color: grey;">
+			如无法登录，请点击<span style="font-weight: bold;color: #000000;">账号申诉</span>申请客服协助
+		</nav>
+
+
+
+
+	</body>
+	<script src="js/mui.js"></script>
+	<script type="text/javascript">
+		mui.init()
+	</script>
+</html>
